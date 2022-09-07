@@ -1,5 +1,6 @@
 type Query {
-  jobs: [Job!]
+  jobs(id: ID): [Job!]
+  # return single job if id or all jobs if no id 
 }
 
 type Company {
