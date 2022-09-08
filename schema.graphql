@@ -2,13 +2,14 @@ type Query {
   job(id: ID!): Job
   jobs: [Job!]
   company(id: ID!): Company
-  # return single job if id or all jobs if no id 
+  # could return single job if id or all jobs if no id 
 }
 
 type Company {
   id: ID!
   name: String!
   description: String
+  jobs: [Job!]
 }
 
 type Job {
