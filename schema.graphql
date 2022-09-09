@@ -5,6 +5,10 @@ type Query {
   # could return single job if id or all jobs if no id 
 }
 
+type Mutation {
+  createJob(title: String!, companyId: ID!, description: String): Job
+}
+
 type Company {
   id: ID!
   name: String!
